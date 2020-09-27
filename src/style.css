@@ -11,7 +11,10 @@ img{max-width: 100%; max-height: 100%;}
 
 /*style*/
 body{
-    background: #eee;
+    /* background: #eee; */
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url('./images/bg.jpg');
 }
 
 .globalHeader{
