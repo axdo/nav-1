@@ -73,3 +73,7 @@ $(document).on('keypress', (e) => {
         }
     }
 })
+//阻止输入框事件冒泡 否则输入字母会跳转对应的网站
+$('#searchInput').on('keypress', (e) => {
+    e.stopPropagation();
+})

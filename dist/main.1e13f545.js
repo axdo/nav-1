@@ -180,6 +180,10 @@ $(document).on('keypress', function (e) {
       window.open(hashMap[i].url);
     }
   }
+}); //阻止输入框事件冒泡 否则输入字母会跳转对应的网站
+
+$('#searchInput').on('keypress', function (e) {
+  e.stopPropagation();
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.345f8f7a.js.map
+//# sourceMappingURL=main.1e13f545.js.map
